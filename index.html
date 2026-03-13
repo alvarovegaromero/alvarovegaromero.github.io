@@ -1,307 +1,805 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Álvaro Vega Romero — Software Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Álvaro Vega Romero | Software Engineer</title>
+    <meta name="description" content="Software Engineer based in Madrid & Granada, Spain. Building scalable systems and AI-powered products. Java, Spring Boot, microservices, and fullstack development.">
+    <meta property="og:title" content="Álvaro Vega Romero | Software Engineer">
+    <meta property="og:description" content="Building scalable systems and AI-powered products. Java, Spring Boot, microservices, and fullstack development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alvarovegaromero.github.io">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Álvaro Vega Romero | Software Engineer">
+    <meta name="twitter:description" content="Building scalable systems and AI-powered products. Java, Spring Boot, microservices, and fullstack development.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230d0d0d'/><text x='50' y='68' font-family='sans-serif' font-weight='800' font-size='42' fill='%23c8f060' text-anchor='middle'>AV</text></svg>">
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Syne:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+    />
+  </head>
+  <body>
+    <div
+      class="cursor-dot"
+      id="cursorDot"
+    ></div>
 
-  <div class="cursor-dot" id="cursorDot"></div>
-
-  <!-- NAV -->
-  <nav>
-    <a href="#hero" class="nav-logo">AVR</a>
-    <div class="nav-right">
-      <ul class="nav-links">
-        <li><a href="#about" data-i18n="nav.about">About</a></li>
-        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
-        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
-        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-      </ul>
-      <div class="lang-toggle">
-        <button data-lang="en" class="active">EN</button>
-        <button data-lang="es">ES</button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section id="hero">
-    <div class="container">
-      <p class="hero-eyebrow" data-i18n="hero.eyebrow">Software Engineer · Based in Madrid, Spain</p>
-      <h1 class="hero-name">Álvaro<br><em>Vega Romero</em></h1>
-      <p class="hero-tagline" data-i18n="hero.tagline">Building scalable systems and AI-powered products, passionate about clean architecture and simplicity.</p>
-      <div class="hero-links">
-        <a href="mailto:vegaromeroalvaro@gmail.com" class="btn btn-primary" data-i18n="hero.cta">Get in touch</a>
-        <a href="https://github.com/alvarovegaromero" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
-        <a href="https://linkedin.com/in/vegaromeroalvaro" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <p class="section-label fade-in" data-i18n="section.about">About</p>
-      <div class="about-grid">
-        <div class="about-text fade-in">
-          <p data-i18n="about.p1">Software engineer with a strong foundation in backend systems — Java, Spring Boot, microservices — and the curiosity to go fullstack when the product demands it.</p>
-          <p data-i18n="about.p2">I'm drawn to work where engineering and AI intersect: building systems that are reliable, scalable, and genuinely useful to the people who use them.</p>
-          <p data-i18n="about.p3">Currently deepening my work at the intersection of product and infrastructure, with a focus on AI-integrated applications.</p>
-        </div>
-        <div class="skills-grid fade-in">
-          <div>
-            <p class="skill-group-label" data-i18n="skills.core">Core</p>
-            <div class="tag-list">
-              <span class="tag highlight">Java</span>
-              <span class="tag highlight">Spring Boot</span>
-              <span class="tag highlight">Python</span>
-              <span class="tag">Microservices</span>
-              <span class="tag">REST APIs</span>
-            </div>
-          </div>
-          <div>
-            <p class="skill-group-label" data-i18n="skills.frontend">Frontend & Mobile</p>
-            <div class="tag-list">
-              <span class="tag">TypeScript</span>
-              <span class="tag">React</span>
-              <span class="tag">Angular</span>
-              <span class="tag">NextJS</span>
-              <span class="tag">React Native</span>
-            </div>
-          </div>
-          <div>
-            <p class="skill-group-label" data-i18n="skills.infra">Infra & Data</p>
-            <div class="tag-list">
-              <span class="tag">Apache Kafka</span>
-              <span class="tag">AWS</span>
-              <span class="tag">GCP</span>
-              <span class="tag">Docker</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag">PostgreSQL</span>
-            </div>
-          </div>
-          <div>
-            <p class="skill-group-label" data-i18n="skills.ai">AI & Tooling</p>
-            <div class="tag-list">
-              <span class="tag highlight">LLM Integration</span>
-              <span class="tag highlight">Prompt Engineering</span>
-              <span class="tag">GitHub Copilot</span>
-            </div>
-          </div>
+    <!-- NAV -->
+    <nav>
+      <div class="nav-center">
+        <ul class="nav-links">
+          <li>
+            <a
+              href="#about"
+              data-i18n="nav.about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#experience"
+              data-i18n="nav.experience"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              data-i18n="nav.projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              data-i18n="nav.contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="lang-toggle">
+          <button
+            data-lang="en"
+            class="active"
+          >
+            EN
+          </button>
+          <button data-lang="es">ES</button>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="container">
-      <p class="section-label fade-in" data-i18n="section.experience">Experience</p>
-      <div class="experience-list">
+    <!-- HERO -->
+    <section id="hero">
+      <div class="container">
+        <p
+          class="hero-eyebrow"
+          data-i18n="hero.eyebrow"
+        >
+          Software Engineer · Madrid | Granada, Spain
+        </p>
+        <h1 class="hero-name">Álvaro<br /><em>Vega Romero</em></h1>
+        <p
+          class="hero-tagline"
+          data-i18n="hero.tagline"
+        >
+          Building scalable systems and AI-powered products, passionate about
+          clean architecture and simplicity.
+        </p>
+        <div class="hero-links">
+          <a
+            href="#contact"
+            class="btn btn-primary"
+            data-i18n="hero.cta"
+            ><svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m22 2-7 20-4-9-9-4z" />
+              <path d="M22 2 11 13" /></svg
+            >Get in touch</a
+          >
+          <a
+            href="https://github.com/alvarovegaromero"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-ghost btn-github"
+            ><svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+              /></svg
+            >GitHub</a
+          >
+          <a
+            href="https://linkedin.com/in/vegaromeroalvaro"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-ghost btn-linkedin"
+            ><svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              /></svg
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </section>
 
-        <div class="exp-item fade-in">
-          <div class="exp-meta">
-            <p class="exp-period">2025 — Present</p>
-            <span class="exp-type featured" data-i18n="exp.stealth.type">Founding</span>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <p
+          class="section-label fade-in"
+          data-i18n="section.about"
+        >
+          About
+        </p>
+        <div class="about-grid">
+          <div class="about-text fade-in">
+            <p data-i18n="about.p1">
+              Software engineer with a strong foundation in backend systems —
+              Java, Spring Boot, microservices — and the curiosity to go
+              fullstack when the product demands it.
+            </p>
+            <p data-i18n="about.p2">
+              I'm drawn to work where engineering and AI intersect: building
+              systems that are reliable, scalable, and genuinely useful to the
+              people who use them.
+            </p>
+            <p data-i18n="about.p3">
+              Currently deepening my work at the intersection of product and
+              infrastructure, with a focus on AI-integrated applications.
+            </p>
           </div>
-          <div>
-            <div class="exp-company">Stealth Startup</div>
-            <p class="exp-role" data-i18n="exp.stealth.role">Founding Software Engineer</p>
-            <p class="exp-desc" data-i18n="exp.stealth.desc">Building from the ground up as a founding engineer at an early-stage venture. Driving architecture decisions and full-stack development across the product.</p>
+          <div class="skills-grid fade-in">
+            <div>
+              <p
+                class="skill-group-label"
+                data-i18n="skills.core"
+              >
+                Core
+              </p>
+              <div class="tag-list">
+                <span class="tag highlight">Java</span>
+                <span class="tag highlight">Spring Boot</span>
+                <span class="tag highlight">Python</span>
+                <span class="tag">Microservices</span>
+                <span class="tag">REST APIs</span>
+              </div>
+            </div>
+            <div>
+              <p
+                class="skill-group-label"
+                data-i18n="skills.frontend"
+              >
+                Frontend & Mobile
+              </p>
+              <div class="tag-list">
+                <span class="tag">TypeScript</span>
+                <span class="tag">React</span>
+                <span class="tag">Angular</span>
+                <span class="tag">NextJS</span>
+                <span class="tag">React Native</span>
+              </div>
+            </div>
+            <div>
+              <p
+                class="skill-group-label"
+                data-i18n="skills.infra"
+              >
+                Infra & Data
+              </p>
+              <div class="tag-list">
+                <span class="tag highlight">Apache Kafka</span>
+                <span class="tag">AWS</span>
+                <span class="tag">GCP</span>
+                <span class="tag">Docker</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Kubernetes</span>
+              </div>
+            </div>
+            <div>
+              <p
+                class="skill-group-label"
+                data-i18n="skills.ai"
+              >
+                AI & Tooling
+              </p>
+              <div class="tag-list">
+                <span class="tag highlight">Claude Code</span>
+                <span class="tag highlight">GitHub Copilot</span>
+                <span class="tag">Context Engineering</span>
+                <span class="tag">LLM Integration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="container">
+        <p
+          class="section-label fade-in"
+          data-i18n="section.experience"
+        >
+          Experience
+        </p>
+        <div class="experience-list">
+          <!-- TODO: Uncomment when ready to make public
+          <div class="exp-item fade-in">
+            <div class="exp-meta">
+              <p class="exp-period">2025 — Present</p>
+              <span class="exp-type featured" data-i18n="exp.stealth.type">Part-Time</span>
+            </div>
+            <div>
+              <div class="exp-company">Stealth Startup</div>
+              <p class="exp-role" data-i18n="exp.stealth.role">Founding Software Engineer · Remote, New York</p>
+              <p class="exp-desc" data-i18n="exp.stealth.desc">Building from the ground up as a founding engineer at an early-stage venture. Driving architecture decisions and full-stack development across the product.</p>
+              <div class="tag-list">
+                <span class="tag highlight">NextJS</span>
+                <span class="tag highlight">TypeScript</span>
+                <span class="tag highlight">Python</span>
+                <span class="tag">GCP</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Docker</span>
+                <span class="tag">React Native</span>
+              </div>
+            </div>
+          </div>
+          -->
+
+          <div class="exp-item fade-in">
+            <div class="exp-meta">
+              <p class="exp-period">Sep 2024 — Present</p>
+              <span
+                class="exp-type"
+                data-i18n="exp.verisure.type"
+                >Full-time</span
+              >
+            </div>
+            <div>
+              <div class="exp-company">Verisure</div>
+              <p
+                class="exp-role"
+                data-i18n="exp.verisure.role"
+              >
+                Junior Software Engineer · Hybrid, Madrid
+              </p>
+              <div class="exp-desc" data-i18n-html="exp.verisure.desc">
+                <ul>
+                  <li>Building and maintaining backend systems at scale — serving millions of customers across Southern Europe and Latin America</li>
+                  <li>Developed an event scheduler and a firmware update management system for alarm devices</li>
+                  <li>Event-driven architecture with Kafka and API Gateways for high-throughput reliability</li>
+                </ul>
+              </div>
+              <div class="tag-list">
+                <span class="tag highlight">Java</span>
+                <span class="tag highlight">Spring Boot</span>
+                <span class="tag highlight">Kafka</span>
+                <span class="tag highlight">MongoDB</span>
+                <span class="tag highlight">SQL</span>
+                <span class="tag">Python</span>
+                <span class="tag">Angular</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">AWS</span>
+                <span class="tag">RabbitMQ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-item fade-in">
+            <div class="exp-meta">
+              <p class="exp-period">Nov 2024 — Sep 2025</p>
+              <span
+                class="exp-type"
+                data-i18n="exp.outlier.type"
+                >Freelance</span
+              >
+            </div>
+            <div>
+              <div class="exp-company">Outlier</div>
+              <p
+                class="exp-role"
+                data-i18n="exp.outlier.role"
+              >
+                AI Training — Programming Expertise · Remote, USA
+              </p>
+              <div class="exp-desc" data-i18n-html="exp.outlier.desc">
+                <ul>
+                  <li>Reviewed AI-generated code and bilingual (EN/ES) outputs, providing technical and linguistic feedback to improve LLM accuracy</li>
+                  <li>Contributed Java and Python expertise to generative AI training pipelines</li>
+                </ul>
+              </div>
+              <div class="tag-list">
+                <span class="tag">Java</span>
+                <span class="tag">Python</span>
+                <span class="tag">AI Training</span>
+                <span class="tag">Prompt Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-item fade-in">
+            <div class="exp-meta">
+              <p class="exp-period">Nov 2023 — May 2024</p>
+              <span
+                class="exp-type"
+                data-i18n="exp.badger.type"
+                >Internship</span
+              >
+            </div>
+            <div>
+              <div class="exp-company">
+                <a
+                  href="https://badgermapping.com"
+                  target="_blank"
+                  rel="noopener"
+                  >Badger Maps</a
+                >
+              </div>
+              <p
+                class="exp-role"
+                data-i18n="exp.badger.role"
+              >
+                Software Engineer Intern · Granada, Spain
+              </p>
+              <div class="exp-desc" data-i18n-html="exp.badger.desc">
+                <ul>
+                  <li>Built full-stack features in a monolithic architecture using Django and React, for both the main product and internal admin tooling</li>
+                  <li>Streamlined CRM import workflows with asynchronous processing (10K+ accounts/hour)</li>
+                  <li>95%+ test coverage across all new code, reducing bugs and increasing stability</li>
+                </ul>
+              </div>
+              <div class="tag-list">
+                <span class="tag highlight">Python</span>
+                <span class="tag highlight">Django</span>
+                <span class="tag highlight">React</span>
+                <span class="tag highlight">TypeScript</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Docker</span>
+                <span class="tag">AWS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <p
+          class="section-label fade-in"
+          data-i18n="section.projects"
+        >
+          Projects & Ventures
+        </p>
+        <div class="projects-grid">
+          <div class="project-card featured-card fade-in">
+            <p
+              class="project-label"
+              data-i18n="proj.amrap.label"
+            >
+              ✦ Current venture
+            </p>
+            <div class="project-name">Amrap.ai</div>
+            <p
+              class="project-desc"
+              data-i18n="proj.amrap.desc"
+            >
+              AI-powered strength training coach that gives real-time,
+              conversational guidance inside the weight room. Amrap builds
+              personalised training programs, adapts sets and reps on the fly,
+              and answers questions mid-session — making strength training
+              accessible to everyone, not just the confident few.
+            </p>
+            <p
+              class="project-desc"
+              style="
+                color: #666;
+                font-size: 12px;
+                margin-bottom: 16px;
+                font-style: italic;
+              "
+              data-i18n="proj.amrap.quote"
+            >
+              "3 in 5 adults do no muscle-strengthening activity — not from lack
+              of motivation, but because the weight room is intimidating. We're
+              changing that."
+            </p>
+            <div class="project-links">
+              <a
+                href="https://amrap.ai"
+                target="_blank"
+                rel="noopener"
+                >Website</a
+              >
+            </div>
             <div class="tag-list">
-              <span class="tag highlight">Founding Engineer</span>
+              <span class="tag highlight">AI Coaching</span>
+              <span class="tag highlight">LLMs</span>
+              <span class="tag">iOS</span>
+              <span class="tag">Android</span>
               <span class="tag">Fullstack</span>
             </div>
           </div>
-        </div>
 
-        <div class="exp-item fade-in">
-          <div class="exp-meta">
-            <p class="exp-period">Sep 2024 — Present</p>
-            <span class="exp-type" data-i18n="exp.verisure.type">Full-time</span>
-          </div>
-          <div>
-            <div class="exp-company">Verisure</div>
-            <p class="exp-role" data-i18n="exp.verisure.role">Junior Software Engineer · Hybrid, Madrid</p>
-            <p class="exp-desc" data-i18n="exp.verisure.desc">Building and maintaining backend systems at scale — serving millions of customers across Southern Europe and Latin America. Developed an event scheduler and a firmware update management system for alarm devices, using event-driven architecture with Kafka and API Gateways for high-throughput reliability.</p>
-            <div class="tag-list">
-              <span class="tag">Java</span>
-              <span class="tag">Spring Boot</span>
-              <span class="tag">Angular</span>
-              <span class="tag">Kafka</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag">AWS</span>
-              <span class="tag">RabbitMQ</span>
+          <div class="project-card fade-in">
+            <p
+              class="project-label"
+              data-i18n="proj.easyhome.label"
+            >
+              Fullstack App
+            </p>
+            <div class="project-name">EasyHome</div>
+            <p
+              class="project-desc"
+              data-i18n="proj.easyhome.desc"
+            >
+              Mobile app to facilitate apartment sharing — shared expenses,
+              shopping lists, and household management. Built with React Native
+              (TypeScript) and a Django REST API backend, with extensive
+              automated testing on both ends.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/alvarovegaromero/EasyHome-App"
+                target="_blank"
+                rel="noopener"
+                >Frontend</a
+              >
+              <a
+                href="https://github.com/alvarovegaromero/EasyHome-Backend"
+                target="_blank"
+                rel="noopener"
+                >Backend</a
+              >
             </div>
-          </div>
-        </div>
-
-        <div class="exp-item fade-in">
-          <div class="exp-meta">
-            <p class="exp-period">Nov 2024 — Sep 2025</p>
-            <span class="exp-type" data-i18n="exp.outlier.type">Freelance</span>
-          </div>
-          <div>
-            <div class="exp-company">Outlier</div>
-            <p class="exp-role" data-i18n="exp.outlier.role">AI Training — Programming Expertise</p>
-            <p class="exp-desc" data-i18n="exp.outlier.desc">Reviewed AI-generated code and bilingual (EN/ES) outputs, providing technical and linguistic feedback to improve LLM accuracy. Contributed Java and Python expertise to generative AI training pipelines.</p>
             <div class="tag-list">
-              <span class="tag">Java</span>
-              <span class="tag">Python</span>
-              <span class="tag highlight">AI Training</span>
-              <span class="tag highlight">Prompt Engineering</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="exp-item fade-in">
-          <div class="exp-meta">
-            <p class="exp-period">Nov 2023 — May 2024</p>
-            <span class="exp-type" data-i18n="exp.badger.type">Internship</span>
-          </div>
-          <div>
-            <div class="exp-company">
-              <a href="https://badgermapping.com" target="_blank" rel="noopener">Badger Maps</a>
-            </div>
-            <p class="exp-role" data-i18n="exp.badger.role">Software Engineer Intern · Granada, Spain</p>
-            <p class="exp-desc" data-i18n="exp.badger.desc">Built full-stack features for a B2B sales productivity platform. Streamlined CRM import workflows with asynchronous processing (10K+ accounts/hour). Achieved 95%+ test coverage across all new code. Worked across backend (Django), frontend (React), and internal admin tooling.</p>
-            <div class="tag-list">
-              <span class="tag">Python</span>
-              <span class="tag">Django</span>
-              <span class="tag">React</span>
+              <span class="tag">React Native</span>
               <span class="tag">TypeScript</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Docker</span>
-              <span class="tag">AWS</span>
+              <span class="tag">Django</span>
+              <span class="tag">REST API</span>
+            </div>
+          </div>
+
+          <div class="project-card fade-in">
+            <p
+              class="project-label"
+              data-i18n="proj.snake.label"
+            >
+              Playable Demo
+            </p>
+            <div class="project-name">Snake3D</div>
+            <p
+              class="project-desc"
+              data-i18n="proj.snake.desc"
+            >
+              A modern 3D version of the classic Snake game, built with
+              JavaScript and Three.js. Playable directly in the browser.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://alvarovegaromero.github.io/Snake3D/"
+                target="_blank"
+                rel="noopener"
+                >Play</a
+              >
+              <a
+                href="https://github.com/alvarovegaromero/Snake3D"
+                target="_blank"
+                rel="noopener"
+                >Repo</a
+              >
+            </div>
+            <div class="tag-list">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Three.js</span>
+              <span class="tag">WebGL</span>
+            </div>
+          </div>
+
+          <div class="project-card fade-in">
+            <p
+              class="project-label"
+              data-i18n="proj.leetcode.label"
+            >
+              Problem Solving
+            </p>
+            <div class="project-name">LeetCode Solutions</div>
+            <p
+              class="project-desc"
+              data-i18n="proj.leetcode.desc"
+            >
+              Collection of solutions to LeetCode problems, focused on data
+              structures and algorithms. Continuously updated.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/alvarovegaromero/LeetCode-Solutions"
+                target="_blank"
+                rel="noopener"
+                >Repo</a
+              >
+            </div>
+            <div class="tag-list">
+              <span class="tag">Java</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">DSA</span>
+            </div>
+          </div>
+
+          <div class="project-card fade-in">
+            <p
+              class="project-label"
+              data-i18n="proj.ugr.label"
+            >
+              Academic
+            </p>
+            <div
+              class="project-name"
+              data-i18n="proj.ugr.name"
+            >
+              UGR Notes — 70K+ downloads
+            </div>
+            <p
+              class="project-desc"
+              data-i18n="proj.ugr.desc"
+            >
+              Published academic materials during my CS degree at Universidad de
+              Granada on Wuolah. Became the most downloaded author in the
+              Faculty of Computer Science — 70,000+ downloads from fellow
+              students.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Computer Science</span>
+              <span class="tag">Knowledge Sharing</span>
             </div>
           </div>
         </div>
-
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="container">
-      <p class="section-label fade-in" data-i18n="section.projects">Projects & Ventures</p>
-      <div class="projects-grid">
-
-        <div class="project-card featured-card fade-in">
-          <p class="project-label" data-i18n="proj.amrap.label">✦ Current venture</p>
-          <div class="project-name"><a href="https://amrap.ai" target="_blank" rel="noopener">Amrap.ai</a></div>
-          <p class="project-desc" data-i18n="proj.amrap.desc">
-            AI-powered strength training coach that gives real-time, conversational guidance inside the weight room. Amrap builds personalised training programs, adapts sets and reps on the fly, and answers questions mid-session — making strength training accessible to everyone, not just the confident few.
-          </p>
-          <p class="project-desc" style="color: #666; font-size: 12px; margin-bottom: 16px; font-style: italic;" data-i18n="proj.amrap.quote">
-            "3 in 5 adults do no muscle-strengthening activity — not from lack of motivation, but because the weight room is intimidating. We're changing that."
-          </p>
-          <div class="tag-list">
-            <span class="tag highlight">AI Coaching</span>
-            <span class="tag highlight">LLMs</span>
-            <span class="tag">iOS</span>
-            <span class="tag">Android</span>
-            <span class="tag">Fullstack</span>
-          </div>
-        </div>
-
-        <div class="project-card fade-in">
-          <p class="project-label" data-i18n="proj.github.label">Open source</p>
-          <div class="project-name">
-            <a href="https://github.com/alvarovegaromero" target="_blank" rel="noopener">GitHub Projects</a>
-          </div>
-          <p class="project-desc" data-i18n="proj.github.desc">Personal projects, experiments, and coursework — spanning backend systems, algorithms, and tooling. Most of my hands-on learning lives here.</p>
-          <div class="tag-list">
-            <span class="tag">Java</span>
-            <span class="tag">Python</span>
-            <span class="tag">Various</span>
-          </div>
-        </div>
-
-        <div class="project-card fade-in">
-          <p class="project-label" data-i18n="proj.ugr.label">Academic</p>
-          <div class="project-name">UGR Notes — 70K+ downloads</div>
-          <p class="project-desc" data-i18n="proj.ugr.desc">Published academic materials during my CS degree at Universidad de Granada on Wuolah. Became the most downloaded author in the Faculty of Computer Science — 70,000+ downloads from fellow students.</p>
-          <div class="tag-list">
-            <span class="tag">Computer Science</span>
-            <span class="tag">Knowledge Sharing</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education">
-    <div class="container">
-      <p class="section-label fade-in" data-i18n="section.education">Education</p>
-      <div class="edu-list">
-
-        <div class="edu-item fade-in">
-          <div class="edu-year">2019 – 2024</div>
-          <div>
-            <p class="edu-school">Universidad de Granada</p>
-            <p class="edu-degree" data-i18n="edu.ugr.degree">B.Sc. Computer Science — Software Engineering · Grade: 8.41/10</p>
-            <div class="tag-list" style="margin-bottom: 10px;">
-              <span class="tag highlight" data-i18n="edu.ugr.top">Top 10% of class</span>
-              <span class="tag" data-i18n="edu.ugr.honours">6 subjects graded with honours</span>
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="container">
+        <p
+          class="section-label fade-in"
+          data-i18n="section.education"
+        >
+          Education
+        </p>
+        <div class="edu-list">
+          <div class="edu-item fade-in">
+            <div class="edu-year">2019 – 2024</div>
+            <div>
+              <p class="edu-school">Universidad de Granada</p>
+              <p
+                class="edu-degree"
+                data-i18n="edu.ugr.degree"
+              >
+                B.Sc. Computer Science — Software Engineering · Grade: 8.41/10
+              </p>
+              <div
+                class="tag-list"
+                style="margin-bottom: 10px"
+              >
+                <span
+                  class="tag highlight"
+                  data-i18n="edu.ugr.top"
+                  >Top 10% of class</span
+                >
+                <span
+                  class="tag"
+                  data-i18n="edu.ugr.honours"
+                  >6 subjects graded with honours</span
+                >
+              </div>
+              <p
+                class="edu-note"
+                data-i18n="edu.ugr.note"
+              >
+                Most downloaded author in the Faculty of Computer Science on
+                Wuolah, Spain's largest student note-sharing platform (70K+
+                downloads).
+              </p>
             </div>
-            <p class="edu-note" data-i18n="edu.ugr.note">Most downloaded author in the Faculty of Computer Science on Wuolah (70K+ downloads).</p>
+          </div>
+
+          <div class="edu-item fade-in">
+            <div class="edu-year">2022 – 2023</div>
+            <div>
+              <p class="edu-school">University of Ljubljana</p>
+              <p
+                class="edu-degree"
+                data-i18n="edu.lj.degree"
+              >
+                Erasmus+ Exchange — Computer Science · Grade: 8.8/10
+              </p>
+              <p
+                class="edu-note"
+                data-i18n="edu.lj.note"
+              >
+                A year living and studying in Ljubljana, Slovenia. Collaborated
+                with students from Serbia, Germany, Portugal, and beyond on
+                academic and personal projects.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="edu-item fade-in">
-          <div class="edu-year">2022 – 2023</div>
-          <div>
-            <p class="edu-school">University of Ljubljana</p>
-            <p class="edu-degree" data-i18n="edu.lj.degree">Erasmus+ Exchange — Computer Science · Grade: 8.8/10</p>
-            <p class="edu-note" data-i18n="edu.lj.note">A year living and studying in Ljubljana, Slovenia. Collaborated with students from Serbia, Germany, Portugal, and beyond on academic and personal projects.</p>
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <div class="container">
+        <p
+          class="section-label fade-in"
+          data-i18n="section.certifications"
+        >
+          Certifications
+        </p>
+        <div class="certs-grid fade-in">
+          <div class="cert-pill">
+            <span
+              class="cert-dot"
+              style="background: var(--accent2)"
+            ></span
+            ><span data-i18n="cert.mongodb">Building AI Agents — MongoDB</span>
+          </div>
+          <div class="cert-pill">
+            <span
+              class="cert-dot"
+              style="background: var(--accent2)"
+            ></span
+            ><span data-i18n="cert.aws"
+              >AWS Cloud Quest: Cloud Practitioner</span
+            >
+          </div>
+          <div class="cert-pill">
+            <span
+              class="cert-dot"
+              style="background: var(--accent2)"
+            ></span
+            ><span data-i18n="cert.sre"
+              >SRE Practitioner — DevOps Institute</span
+            >
+          </div>
+          <div class="cert-pill">
+            <span
+              class="cert-dot"
+              style="background: var(--accent2)"
+            ></span
+            ><span data-i18n="cert.github">GitHub Foundations</span>
+          </div>
+          <div class="cert-pill">
+            <span class="cert-dot"></span
+            ><span data-i18n="cert.c1"
+              >C1 Advanced English — Cambridge English</span
+            >
+          </div>
+          <div class="cert-pill">
+            <span class="cert-dot"></span
+            ><span data-i18n="cert.codemotion">Codemotion Madrid 2025</span>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CERTIFICATIONS -->
-  <section id="certifications">
-    <div class="container">
-      <p class="section-label fade-in" data-i18n="section.certifications">Certifications</p>
-      <div class="certs-grid fade-in">
-        <div class="cert-pill"><span class="cert-dot"></span><span data-i18n="cert.c1">C1 Advanced English — Cambridge English</span></div>
-        <div class="cert-pill"><span class="cert-dot"></span><span data-i18n="cert.c2">C2 Proficient — EF SET (74/100)</span></div>
-        <div class="cert-pill"><span class="cert-dot" style="background: var(--accent2)"></span><span data-i18n="cert.sre">SRE Practitioner — DevOps Institute</span></div>
-        <div class="cert-pill"><span class="cert-dot"></span><span data-i18n="cert.codemotion">Codemotion Madrid 2024</span></div>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="contact-headline fade-in">
+          <span data-i18n="contact.headline.1">Let's build something</span
+          ><br /><em data-i18n="contact.headline.2">worth building.</em>
+        </h2>
+        <p
+          class="contact-sub fade-in"
+          data-i18n="contact.sub"
+        >
+          Madrid | Granada or Remote · Open to collaboration on exciting tech
+          projects
+        </p>
+        <div class="contact-links fade-in">
+          <a
+            href="mailto:vegaromeroalvaro@gmail.com"
+            class="btn btn-primary"
+            ><svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect
+                x="2"
+                y="4"
+                width="20"
+                height="16"
+                rx="2"
+              />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg
+            >vegaromeroalvaro@gmail.com</a
+          >
+          <a
+            href="https://github.com/alvarovegaromero"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-github"
+            ><svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+              /></svg
+            >GitHub</a
+          >
+          <a
+            href="https://linkedin.com/in/vegaromeroalvaro"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-linkedin"
+            ><svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+              /></svg
+            >LinkedIn</a
+          >
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="contact-headline fade-in"><span data-i18n="contact.headline.1">Let's build something</span><br><em data-i18n="contact.headline.2">worth building.</em></h2>
-      <p class="contact-sub fade-in" data-i18n="contact.sub">Madrid or Remote · Open to collaboration on exciting tech projects</p>
-      <div class="contact-links fade-in">
-        <a href="mailto:vegaromeroalvaro@gmail.com" class="btn btn-primary">vegaromeroalvaro@gmail.com</a>
-        <a href="https://github.com/alvarovegaromero" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
-        <a href="https://linkedin.com/in/vegaromeroalvaro" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
-      </div>
-    </div>
-  </section>
+    <footer>
+      <p data-i18n="footer">© 2026 Álvaro Vega Romero</p>
+    </footer>
 
-  <footer>
-    <p data-i18n="footer">© 2025 Álvaro Vega Romero · Built with vanilla HTML/CSS</p>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

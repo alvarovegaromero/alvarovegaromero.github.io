@@ -11,6 +11,9 @@
     document.querySelectorAll('[data-i18n]').forEach(el => {
       enSnapshot[el.getAttribute('data-i18n')] = el.textContent;
     });
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      enSnapshot[el.getAttribute('data-i18n-html')] = el.innerHTML;
+    });
   }
 
   async function loadSpanish() {
@@ -24,6 +27,10 @@
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (dict[key] != null) el.textContent = dict[key];
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      if (dict[key] != null) el.innerHTML = dict[key];
     });
     document.documentElement.lang = currentLang;
   }
