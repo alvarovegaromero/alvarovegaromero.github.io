@@ -64,16 +64,6 @@
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   }
 
-  // ─── Custom cursor ───
-  function initCursor() {
-    const dot = document.getElementById('cursorDot');
-    if (!dot) return;
-    document.addEventListener('mousemove', e => {
-      dot.style.left = e.clientX - 3 + 'px';
-      dot.style.top  = e.clientY - 3 + 'px';
-    });
-  }
-
   // ─── Nav active state ───
   function initNavHighlight() {
     const sections = document.querySelectorAll('section[id]');
@@ -94,7 +84,6 @@
   document.addEventListener('DOMContentLoaded', async () => {
     snapshotEnglish();
     observeFadeIns();
-    initCursor();
     initNavHighlight();
 
     // Lang toggle listeners
