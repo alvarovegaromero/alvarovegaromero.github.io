@@ -343,8 +343,8 @@ nav {
 }
 
 .exp-period {
-  font-size: 11px;
-  color: var(--muted);
+  font-size: 13px;
+  color: #aaa;
   letter-spacing: 0.04em;
   margin-bottom: 4px;
 }
@@ -353,8 +353,8 @@ nav {
   font-size: 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--border);
-  border: 1px solid var(--border);
+  color: #aaa;
+  border: 1px solid #555;
   display: inline-block;
   padding: 2px 6px;
   border-radius: 2px;
