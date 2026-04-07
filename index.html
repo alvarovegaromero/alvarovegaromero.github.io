@@ -256,28 +256,52 @@
           Experience
         </p>
         <div class="experience-list">
-          <!-- TODO: Uncomment when ready to make public
           <div class="exp-item fade-in">
             <div class="exp-meta">
-              <p class="exp-period">2025 — Present</p>
-              <span class="exp-type featured" data-i18n="exp.stealth.type">Part-Time</span>
+              <p class="exp-period">Sep 2025 — Present</p>
+              <span class="exp-type featured" data-i18n="exp.amrap.type"
+                >Part-time</span
+              >
             </div>
             <div>
-              <div class="exp-company">Stealth Startup</div>
-              <p class="exp-role" data-i18n="exp.stealth.role">Founding Software Engineer · Remote, New York</p>
-              <p class="exp-desc" data-i18n="exp.stealth.desc">Building from the ground up as a founding engineer at an early-stage venture. Driving architecture decisions and full-stack development across the product.</p>
+              <div class="exp-company">
+                <a
+                  href="https://amrap.ai"
+                  target="_blank"
+                  rel="noopener"
+                  >Amrap.ai</a
+                >
+              </div>
+              <p
+                class="exp-role"
+                data-i18n="exp.amrap.role"
+              >
+                AI Software Founding Engineer · Remote
+              </p>
+              <div class="exp-desc" data-i18n-html="exp.amrap.desc">
+                <ul>
+                  <li>AI-powered fitness coaching platform delivering personalized gym programs — owning features end-to-end across full stack and infrastructure</li>
+                  <li>Implemented STT pipeline using GPT-4o Transcribe + Deepgram fallback with custom prompts, word boosting and hallucination filtering</li>
+                  <li>Built core product features including server-side pagination, content gating for premium users, and a blog for SEO</li>
+                  <li>Led a full Clean Architecture refactor of the landing page codebase, improving maintainability and scalability</li>
+                </ul>
+              </div>
               <div class="tag-list">
-                <span class="tag highlight">NextJS</span>
-                <span class="tag highlight">TypeScript</span>
+                <span class="tag highlight">Next.js</span>
                 <span class="tag highlight">Python</span>
-                <span class="tag">GCP</span>
+                <span class="tag highlight">FastAPI</span>
+                <span class="tag highlight">TypeScript</span>
+                <span class="tag highlight">React</span>
+                <span class="tag">TailwindCSS</span>
                 <span class="tag">PostgreSQL</span>
+                <span class="tag">Google Cloud</span>
+                <span class="tag">Terraform</span>
+                <span class="tag">Kubernetes</span>
                 <span class="tag">Docker</span>
-                <span class="tag">React Native</span>
+                <span class="tag">Supabase</span>
               </div>
             </div>
           </div>
-          -->
 
           <div class="exp-item fade-in">
             <div class="exp-meta">
@@ -298,21 +322,27 @@
               </p>
               <div class="exp-desc" data-i18n-html="exp.verisure.desc">
                 <ul>
-                  <li>Building and maintaining backend systems at scale — serving millions of customers across Southern Europe and Latin America</li>
-                  <li>Developed an event scheduler and a firmware update management system for alarm devices</li>
-                  <li>Event-driven architecture with Kafka and API Gateways for high-throughput reliability</li>
+                  <li>Primary owner of the alarm scheduling platform (100–200K daily schedules) and key contributor to the Firmware Over-The-Air system (1–2M version events/day)</li>
+                  <li>Built tooling to auto-repair broken alarm schedules, resolving ~90% of cases without manual intervention</li>
+                  <li>Implemented retry mechanisms in the Quartz job system, preventing cascading failures blocking up to 10K concurrent schedules</li>
+                  <li>Designed a firmware version master service tracking real-time firmware state across multi-country environments</li>
+                  <li>Implemented a Kafka-based cancellation system ensuring schedule removal across 3 coexisting scheduler versions on customer unsubscription</li>
+                  <li>Managed 6+ production incidents, coordinating 3 urgent hotfix releases under pressure</li>
                 </ul>
               </div>
               <div class="tag-list">
                 <span class="tag highlight">Java</span>
                 <span class="tag highlight">Spring Boot</span>
                 <span class="tag highlight">Kafka</span>
+                <span class="tag highlight">Oracle</span>
+                <span class="tag highlight">MySQL</span>
                 <span class="tag highlight">MongoDB</span>
-                <span class="tag highlight">SQL</span>
-                <span class="tag">Python</span>
-                <span class="tag">Angular</span>
-                <span class="tag">TypeScript</span>
+                <span class="tag">Kubernetes</span>
                 <span class="tag">AWS</span>
+                <span class="tag">Kibana</span>
+                <span class="tag">Python</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Angular</span>
                 <span class="tag">RabbitMQ</span>
               </div>
             </div>
@@ -333,7 +363,7 @@
                 class="exp-role"
                 data-i18n="exp.outlier.role"
               >
-                AI Training — Programming Expertise · Remote, USA
+                Programming Expertise for AI Training · Remote, USA
               </p>
               <div class="exp-desc" data-i18n-html="exp.outlier.desc">
                 <ul>
@@ -377,18 +407,20 @@
               <div class="exp-desc" data-i18n-html="exp.badger.desc">
                 <ul>
                   <li>Built full-stack features in a monolithic architecture using Django and React, for both the main product and internal admin tooling</li>
-                  <li>Streamlined CRM import workflows with asynchronous processing (10K+ accounts/hour)</li>
-                  <li>95%+ test coverage across all new code, reducing bugs and increasing stability</li>
+                  <li>Streamlined CRM import workflows with frontend animations and asynchronous processing (10K+ accounts/hour)</li>
+                  <li>95%+ test coverage across all new code with manual and unit tests, reducing bugs and increasing stability</li>
                 </ul>
               </div>
               <div class="tag-list">
                 <span class="tag highlight">Python</span>
                 <span class="tag highlight">Django</span>
-                <span class="tag highlight">React</span>
                 <span class="tag highlight">TypeScript</span>
+                <span class="tag highlight">JavaScript</span>
+                <span class="tag highlight">React</span>
                 <span class="tag">PostgreSQL</span>
                 <span class="tag">Docker</span>
                 <span class="tag">AWS</span>
+                <span class="tag">Datadog</span>
               </div>
             </div>
           </div>
@@ -418,25 +450,8 @@
               class="project-desc"
               data-i18n="proj.amrap.desc"
             >
-              AI-powered strength training coach that gives real-time,
-              conversational guidance inside the weight room. Amrap builds
-              personalised training programs, adapts sets and reps on the fly,
-              and answers questions mid-session — making strength training
-              accessible to everyone, not just the confident few.
-            </p>
-            <p
-              class="project-desc"
-              style="
-                color: #666;
-                font-size: 12px;
-                margin-bottom: 16px;
-                font-style: italic;
-              "
-              data-i18n="proj.amrap.quote"
-            >
-              "3 in 5 adults do no muscle-strengthening activity — not from lack
-              of motivation, but because the weight room is intimidating. We're
-              changing that."
+              AI-powered fitness coaching platform — personalized gym programs
+              with real-time conversational guidance. See Experience for details.
             </p>
             <div class="project-links">
               <a
@@ -449,8 +464,6 @@
             <div class="tag-list">
               <span class="tag highlight">AI Coaching</span>
               <span class="tag highlight">LLMs</span>
-              <span class="tag">iOS</span>
-              <span class="tag">Android</span>
               <span class="tag">Fullstack</span>
             </div>
           </div>
