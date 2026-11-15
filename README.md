@@ -7,8 +7,8 @@ Personal portfolio website for **Álvaro Vega Romero** — Software Engineer fro
 ## What's inside
 
 - About & skills overview
-- Professional experience (Verisure, Stealth Startup, Outlier, Badger Maps)
-- Projects & ventures (Amrap.ai, open source, academic work)
+- Professional experience (Verisure, Outlier, Badger Maps)
+- Projects & ventures (open source, hackathons, academic work)
 - Education & certifications
 - EN/ES language toggle with localStorage persistence
 
